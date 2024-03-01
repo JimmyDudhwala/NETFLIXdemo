@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;   user-scalable=0;" name="viewport">
+	<title>Kosm!c S@ilor</title>
+	
+	<link rel="shortcut icon" type="x-icon" href="logo1.png">
+
+	
+ <style type="text/css">
+        body{
+            margin-top:8vw ;
+            
+            }
+        header{
+            top:0%;
+            width:100%;
+            position: fixed;
+            margin-left: -.5vw;
+            background-color: black;
+        }
+        button{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding:5px;
+            font-family:arial;
+            font-size: 20px;
+            border: solid;
+            border-color: white;
+            border-radius:10px ;
+            margin-left: 38px;
+            margin-top: 1.5vw;
+            
+        }
+        .image{
+            height: 7vw;
+            width: 7vw;
+            margin:-0.7vw -.1vw ;
+        }
+        div{
+            color: yellowgreen;
+            font-size: 35px;
+            border: solid;
+            border-color: white;
+            padding: 1vw;
+            box-shadow:0 5px 40px 5px ghostwhite;
+        }
+         a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: solid;
+  border-color: green;
+  border-radius: 10px;
+}
+
+.content a {
+  color: black;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+  font-family: arial;
+}
+
+.content a:hover {background-color: green;}
+
+.dropdown:hover .content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: green;}
+        
+       
+
+        
+    	.form{
+    		margin-top: 5vw;
+    		border:solid;
+    		border-color: yellowgreen;
+    		width: 70vw;
+    		box-shadow:0 5px 40px 5px blueviolet;
+    	}
+
+    	th{
+    		color:white;
+    		font-family:arial;
+    		text-align: left;
+    		font-size: 20px;
+    	}
+
+       
+        table{
+        	width: 65vw;
+        }
+        td{
+        	color: white;
+        	font-family:arial ;
+        	font-size: 20px;
+        }
+        .submit{
+        	border-radius: 100px;
+        	border-width: 0.3svw;
+        	height: 2.5vw;
+        	width: 9vw;
+        	font-size: 25px;
+        	background-color: blueviolet;
+        	border-color: lightgoldenrodyellow;
+        	color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+
+<!-- NAVIGATION BAR -->
+<header>    
+<img src="logo1.png" align="right" class="image" ></img>
+<center>
+<span class="dropdown">    
+<button class="dropbtn" > <b>HOME</b></button>
+</span>
+<span class="dropdown">
+<button class="dropbtn"> <b>MOVIES</b> </button>
+</span>    
+<span class="dropdown"><button class="dropbtn"><a href="music.html"><b>MUSIC</b></a></button></span>
+<span class="dropdown"><button class="dropbtn"><a href="games.html"><b>GAMES</b></a></button> </span>
+<span class="dropdown"><button class="dropbtn"><a href="shopping.html"><b>SHOPPING</b></a></button></span>
+<span class="dropdown">
+<button class="dropbtn"><b>MORE</b></button>
+    <span class="content">
+        <a href="ticket.html"><b>ONLINE BOOKING</b></a>
+        <a href="#"><b>RESTAURANTS</b></b></a>
+        <a href="#"><b>ONLINE COURSES</b></a>
+        <a href="#"><b>GOV. LINKS</b></a>
+        <a href="#"><b>NEWS</b></a>
+    </span>
+</span>
+</center>
+</header>
+<center>
+    <div><b>KOSM!C S@ILOR BOOK TICKETS </b></div>
+<div class="form"> 
+<table width="100" cellspacing="50vw">
+	<h1>Booking Form</h1>
+	<form>
+		<tr>
+			<th>First Name:</th>
+			<td><input type="text" name="1name" required></td>
+			<th>Surname:</th>
+			<td><input type="text" name="2name" required></td>
+		</tr>
+		<tr>
+			<th>Journey From:</th>
+			<td><input type="text" name="Journey1" required></td>
+			<th>Journey To:</th>
+			<td><input type="text" name="Journey2" required></td>
+		</tr>
+		<tr>
+			<th>Departure Date:</th>
+			<td><input type="date" name="Departure" size="100px" required></td>
+			<th>Return Date:</th>
+			<td><input type="date" name="Return"></td>
+		</tr>
+		<tr>
+			<th>Age:</th>
+			<td><input type="text" name="age"></td>
+			<th>Gender:</th>
+			<td><b>Male <input type="radio" name="male"> &nbsp; Female<input type="radio" name="male"> &nbsp; Others<input type="radio" name="male"></b></td>
+		</tr>
+		<tr>
+			<th>Phone:</th>
+			<td><input type="tel" name="phone" placeholder="1234567890" pattern="[0-9]{10}"></td>
+			<th>Date of birth:</th>
+			<td><input type="date" name="birth"></td>
+		</tr>
+		<tr>
+			<th>E-mail:</th>
+			<td><input type="E-mail" name="email">
+			<th>Adhaar No.</th>
+			<td><input type="tel" name="Adhaar" placeholder="1111-2222-3333" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"></td>
+		</tr>
+		
+		<tr>
+			<th colspan="4" ><center><input class="submit" type="Submit" name="submit"></center></th>
+		</tr>
+	</form>
+</table>
+</center>
+</body>
+</html> 

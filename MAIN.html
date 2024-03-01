@@ -1,0 +1,397 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>frameset attribute</title>
+    </head>
+    
+   frameset attribute starts here 
+    <frameset rows = "11%, 89%" border="none">
+        <frame name = "top" src = "extra.html" />
+        <frame name = "main" src = "https://www.roamaround.io/login" />
+        <frame name = "bottom" src = "https://www.google.com/" />
+        
+    </frameset>
+    frameset attribute ends here 
+</html>              -->            
+
+
+<!-- DEFAULT SECTION  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="x-icon" href="logo1.png">
+    <title>Kosm!c S@ilor</title>    
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;   user-scalable=0;" name="viewport">
+    <style type="text/css">
+          body{
+            background-color: rgb(20, 20, 20);
+          }
+            body::-webkit-scrollbar{
+            display: none;
+            }
+          .main{
+                display:flex;
+                width: 100%;
+                left: 0%;
+                top: 0%;
+                position:fixed ;
+
+
+                
+                flex-wrap:wrap;
+                justify-content: center;
+                justify-content: space-around;
+
+                
+                z-index: 1;
+                transition-timing-function: ease-in;
+                transition: all 0.5s;
+            }
+            /*.main_k{
+                background-color: rgb(20, 20, 20);
+            }*/
+
+            .navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+        /*header{
+            display: flex;
+            flex: 0 0 auto;
+            top:0%;
+            width:100%;
+            position: fixed;
+            margin-left: -.5vw;
+            background-color: black;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }*/
+        .dropbtn{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding:5px;
+            font-family:arial;
+            font-size: 20px;
+            border: solid;
+            border-color: white;
+            border-radius:10px ;
+            margin-top: 1.3vw;
+            display:inline ;
+            position: static;
+            margin-left: 1.5vw;
+
+            
+            
+        }
+        .image{
+            height: 7vw;
+            width: 7vw;  
+                     
+            flex-wrap:wrap;
+            margin-top: -4vw;
+            margin-left: 90vw;
+
+        }
+        .head{
+            color: yellowgreen;
+            font-size: 35px;
+            border: solid;
+            border-color: white;
+            padding: 1vw;
+            box-shadow:0 5px 40px 5px ghostwhite;
+        }
+    
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: solid;
+  border-color: green;
+  border-radius: 10px;
+}
+
+.content a {
+  color: black;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+  font-family: arial;
+}
+
+.content a:hover {background-color: green;}
+
+.dropdown:hover .content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: green;}
+        
+
+.banner_img{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+
+}
+.ban_name{
+    margin-top: -28vw;
+    margin-left: 5vw;
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: arial,helvetica,sans-serif;
+    text-shadow: 0 0 30px black, 0 0 5px black;
+}
+.b_btn{
+    margin-top: 3.5vw;
+}
+.btn{
+    cursor: pointer ;
+    margin-left: 5vw;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 9vw;
+    font-weight: bolder;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 25px;
+    transition: transform 300ms;
+}
+.btn:hover{
+    transform: scale(1.09);
+    &.grow {
+        transition: all .1s ease-in-out;
+    }
+}
+.description{
+    color: white;
+    font-weight: bolder;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 25px;
+    text-shadow: 0 0 30px black, 0 0 5px black;
+    margin-left: 5vw;
+    margin-top: 1.5vw;
+    width: 58vw;
+}
+       
+.trending{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.8vw;
+    height:18px ;
+    width: 268px;
+    
+}
+.trend_img{
+    margin-top: 1vw;
+    height: 268px;
+    width: 188px;
+    border: solid lightblue;
+    transition: transform 300ms;
+}
+.trend_img:hover{
+    transform: scale(1.09);
+    &.grow {
+        transition: all .1s ease-in-out;
+    }
+}
+.name1{
+    color: white;
+    font-weight: bolder;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 30px;
+   margin-top: 13vw;
+}
+
+
+.series{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5vw;
+    
+}
+.name2{
+    color:white;
+    font-weight: bolder;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 30px;
+    margin-top: 21vw;
+}
+.trend_img1{
+    margin-top: 1vw;
+    height: 200px;
+    width: 380px;
+    border: solid green;
+    transition: transform 300ms;
+}
+.trend_img1:hover{
+    transform: scale(1.09);
+    &.grow {
+        transition: all .1s ease-in-out;
+    }
+}
+
+.series1{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.5vw;
+}
+.name3{
+    color:white;
+    font-weight: bolder;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 30px;
+    margin-top: 3vw;
+}
+.trend_img2{
+    margin-top: 1vw;
+    height: 200px;
+    width: 380px;
+    border: solid green;
+    transition: transform 300ms;
+}
+.trend_img2:hover{
+    transform: scale(1.09);
+    &.grow {
+        transition: all .1s ease-in-out;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<header>    
+<div class="main" id="main">
+<center>
+<div class="dropdown">    
+<button class="dropbtn" > <b>HOME</b></button>
+</div>
+<div class="dropdown">
+<button class="dropbtn"> <b>MOVIES</b> </button>
+</div>    
+<div class="dropdown"><button class="dropbtn"><a href="music.html"><b>MUSIC</b></a></button></div>
+<div class="dropdown"><button class="dropbtn"><a href="games.html"><b>GAMES</b></a></button> </div>
+<div class="dropdown"><button class="dropbtn"><a href="shopping.html"><b>SHOPPING</b></a></button></div>
+<div class="dropdown">
+<button class="dropbtn"><b>MORE</b></button>
+    <div class="content">
+        <a href="ticket.html"><b>ONLINE BOOKING</b></a>
+        <a href="#"><b>RESTAURANTS</b></b></a>
+        <a href="#"><b>ONLINE COURSES</b></a>
+        <a href="#"><b>GOV. LINKS</b></a>
+        <a href="#"><b>NEWS</b></a>
+    </div>
+</div>
+<div>
+<img src="logo1.png" class="image" >
+</div> 
+</center>
+</div>
+</header>
+<!-- <center>
+     <div class="head"><b>KOSM!C S@ILOR BOOK TICKET </b></div> 
+</center> -->
+
+<!-- BODY SECTION -->
+
+<div class="banner">
+    <div><img src="movie/banner.jpg" class="banner_img"></div>
+    <div class="ban_name">MONEY HEIST</div>
+    <div class="description">An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.</div>
+    <div class="b_btn"><button class="btn"><img src="movie/play.svg" alt="" style="height: 18px;"> Play</button> <button class="btn"> <img src="movie/info.png" alt="" style="height: 18px;"> More </button></div>
+</div>
+
+<div class="name1">Trending Now</div>
+<div class="trending">
+    
+    <div><img src="movie/1.jpeg" class="trend_img"></div>
+    <div><img src="movie/2.jpeg" class="trend_img"></div>
+    <div><img src="movie/3.jpeg" class="trend_img"></div>
+    <div><img src="movie/4.jpeg" class="trend_img"></div>
+    <div><img src="movie/5.jpg" class="trend_img"></div>
+    <div><img src="movie/6.jpeg" class="trend_img"></div>
+    <div><img src="movie/7.jpg" class="trend_img"></div>
+    <div><img src="movie/1.jpeg" class="trend_img"></div>
+    <div><img src="movie/1.jpeg" class="trend_img"></div>
+    <div><img src="movie/1.jpeg" class="trend_img"></div>
+    <div><img src="movie/1.jpeg" class="trend_img"></div>
+    <div><img src="movie/1.jpeg" class="trend_img"></div>
+
+</div>
+
+<div class="name2">Popular Series</div>
+<div class="series">
+    
+    <div><img src="movie/9.jpg" class="trend_img1"></div>
+    <div><img src="movie/10.jpg" class="trend_img1"></div>
+    <div><img src="movie/11.png" class="trend_img1"></div>
+    <div><img src="movie/12.jpeg" class="trend_img1"></div>
+    <div><img src="movie/5.jpg" class="trend_img1"></div>
+    <div><img src="movie/6.jpeg" class="trend_img1"></div>
+    <div><img src="movie/7.jpg" class="trend_img1"></div>
+    <div><img src="movie/1.jpeg" class="trend_img1"></div>
+    <div><img src="movie/1.jpeg" class="trend_img1"></div>
+    <div><img src="movie/1.jpeg" class="trend_img1"></div>
+    <div><img src="movie/1.jpeg" class="trend_img1"></div>
+    <div><img src="movie/1.jpeg" class="trend_img1"></div>
+
+</div>
+
+<div class="name3">Comedies</div>
+<div class="series1">
+    
+    <div><img src="movie/9.jpg" class="trend_img2"></div>
+    <div><img src="movie/10.jpg" class="trend_img2"></div>
+    <div><img src="movie/11.png" class="trend_img2"></div>
+    <div><img src="movie/12.jpeg" class="trend_img2"></div>
+    <div><img src="movie/13.jpg" class="trend_img2"></div>
+    <div><img src="movie/6.jpeg" class="trend_img2"></div>
+    <div><img src="movie/7.jpg" class="trend_img2"></div>
+    <div><img src="movie/1.jpeg" class="trend_img2"></div>
+    <div><img src="movie/1.jpeg" class="trend_img2"></div>
+    <div><img src="movie/1.jpeg" class="trend_img2"></div>
+    <div><img src="movie/1.jpeg" class="trend_img2"></div>
+    <div><img src="movie/1.jpeg" class="trend_img2"></div>
+
+</div>
+
+<script>
+    // const main = document.getElemntById('main');
+
+    // window.addEventListener('scroll', () => {
+    //     if(window.scrollY >= 100){
+    //         main.classList.add('main_k');
+    //     } else {
+    //         main.classList.remove('main_k');
+
+    //     }
+    // });
+
+    $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+</script>
+</body>
+</html>

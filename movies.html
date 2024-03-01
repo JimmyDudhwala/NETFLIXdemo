@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+a{
+	text-decoration: none;
+	color: black;
+}
+.head{
+	display: flex;
+}
+.dropdown {
+  position: relative;
+  
+}
+.dropbtn{
+	list-style-type: none;
+	margin-left: 2vw;
+	border: solid;
+	border-radius: 7px;
+	padding: 5px;
+	width: auto;
+}
+.content {
+  margin-top: 0.5vw;
+  margin-left: -2vw;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: solid;
+  border-color: green;
+  border-radius: 10px;
+}
+
+.content a {
+  color: black;
+  padding: 10px 5px;
+  text-decoration: none;
+  display: block;
+  font-family: arial;
+}
+
+.content a:hover {background-color: green;}
+
+.dropdown:hover .content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: green;}
+	
+</style>
+</head>
+<body>
+<div class="head">
+	<div class="dropdown"><li class="dropbtn"><a href="">HOME</a></li></div>
+	<div class="dropdown"><li class="dropbtn"><a href="">MOVIES</a></li></div>
+	<div class="dropdown"><li class="dropbtn"><a href="">MUSIC</a></li></div>
+	<div class="dropdown"><li class="dropbtn"><a href="">GAMES</a></li></div>
+	<div class="dropdown"><li class="dropbtn"><a href="">SHOPPING</a></li></div>
+	<div class="dropdown"><li class="dropbtn"><a href="">MORE</a></li`>
+		<div class="content">
+        <a href="ticket.html"><b>ONLINE BOOKING</b></a>
+        <a href="#"><b>RESTAURANTS</b></b></a>
+        <a href="#"><b>ONLINE COURSES</b></a>
+        <a href="#"><b>GOV. LINKS</b></a>
+        <a href="#"><b>NEWS</b></a>
+    </div>
+</div>
+</div>	
+</body>
+</html>

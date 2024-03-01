@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="x-icon" href="logo1.png">
+    <title>Kosm!c S@ilor</title>    
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;   user-scalable=0;" name="viewport">
+    <style type="text/css">
+          body{
+            background-image: url("nav/bg.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            /* background-position-y: -10vw; */
+          }
+            body::-webkit-scrollbar{
+            display: none;
+            }
+          .main{
+                display:flex;
+                width: 100%;
+                left: 0%;
+                top: 0%;
+                position:fixed ;
+                
+
+                
+                flex-wrap:wrap;
+                justify-content: center;
+                justify-content: space-around;
+
+                
+                z-index: 1;
+                transition-timing-function: ease-in;
+                transition: all 0.5s;
+            }
+            /*.main_k{
+                background-color: rgb(20, 20, 20);
+            }*/
+
+            .navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+        /*header{
+            display: flex;
+            flex: 0 0 auto;
+            top:0%;
+            width:100%;
+            position: fixed;
+            margin-left: -.5vw;
+            background-color: black;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }*/
+        .dropbtn{
+            cursor: pointer;
+            /* background-color: white; */
+            /* background-image: url("nav/bg.jpg"); */
+            /* color: white; */
+            padding:5px;
+            font-family:arial;
+            font-size: 20px;
+             border: none;
+             background: none;
+            /*border-color: white;
+            border-radius:10px ; */
+            margin-top: 1.3vw;
+            display:inline ;
+            position: static;
+            margin-left: 1.5vw;
+
+            
+            
+        }
+        .image{
+            height: 7vw;
+            width: 7vw;  
+                     
+            flex-wrap:wrap;
+            margin-top: -4vw;
+            margin-left: 90vw;
+
+        }
+        .head{
+            color: yellowgreen;
+            font-size: 35px;
+            border: solid;
+            border-color: white;
+            padding: 1vw;
+            box-shadow:0 5px 40px 5px ghostwhite;
+        }
+    
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* .content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: solid;
+  border-color: green;
+  border-radius: 10px;
+} */
+
+.content a {
+  color: black;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+  font-family: arial;
+}
+/* 
+.content a:hover {background-color: green;}
+
+.dropdown:hover .content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: green;} */
+
+.nav_img{
+  height: 7vh;
+  margin-left: 50px;
+}
+.nav_img1{
+  margin-top: 1px;
+  height: 10vh;
+  margin-left: 50px;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+<header>    
+<div class="main" id="main">
+<center>
+<div class="dropdown">    
+<button class="dropbtn" > <b><img src="nav/home.png" class="nav_img"></b></button>
+</div>
+<div class="dropdown">
+<button class="dropbtn"> <b><img src="nav/movie.png" class="nav_img1"></b> </button>
+</div>    
+<div class="dropdown"><button class="dropbtn"><a href="music.html"><b><img src="nav/music.png" class="nav_img"></b></a></button></div>
+<div class="dropdown"><button class="dropbtn"><a href="games.html"><b><img src="nav/games.png" class="nav_img"></b></a></button> </div>
+<div class="dropdown"><button class="dropbtn"><a href="shopping.html"><b><img src="nav/shop.png" class="nav_img"></b></a></button></div>
+<div class="dropdown"><button class="dropbtn"><a href="shopping.html"><b><img src="nav/ticket.png" class="nav_img"></b></a></button></div>
+<!-- <div class="dropdown">
+<button class="dropbtn"><b>MORE</b></button>
+    <div class="content">
+        <a href="ticket.html"><b>ONLINE BOOKING</b></a>
+        <a href="#"><b>RESTAURANTS</b></b></a>
+        <a href="#"><b>ONLINE COURSES</b></a>
+        <a href="#"><b>GOV. LINKS</b></a>
+        <a href="#"><b>NEWS</b></a>
+    </div>
+</div> -->
+<div>
+<img src="logo1.png" class="image" >
+</div> 
+</center>
+</div>
+</header>

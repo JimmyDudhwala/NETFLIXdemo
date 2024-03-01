@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="x-icon" href="logo1.png">
+    <title>Kosm!c S@ilor</title>    
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;   user-scalable=0;" name="viewport">
+    <style type="text/css">
+        body{
+            font-family: arial,helvetica,sans-serif;
+            }
+        .container{
+            top:0%;
+            z-index: 1;
+        }
+        /*header{
+            top:0%;
+            width:100%;
+            position: fixed;
+            margin-left: -.5vw;
+            background-color: rgb(0, 16, 0) ;
+        }*/
+        button{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding:5px;
+            font-family:arial;
+            font-size: 20px;
+            border: solid;
+            border-color: white;
+            border-radius:10px ;
+            margin-left: 38px;
+            margin-top: 1.5vw;
+            
+        }
+        .image{
+            height: 7vw;
+            width: 7vw;
+            margin:-0.7vw -.1vw ;
+            top: 0%;
+            z-index: 2;
+        }
+        /*.head{
+            color: yellowgreen;
+            font-size: 35px;
+            border: solid;
+            border-color: white;
+            padding: 1vw;
+            box-shadow:0 5px 40px 5px ghostwhite;
+        }*/
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        td{
+            color: white;
+            border:solid ;
+            border-color: green;
+            
+            
+            &.grow {
+        transition: all .1s ease-in-out;
+                }
+        &:hover {
+          transform: scale(1.09);
+
+        }
+        }
+        
+       
+table{
+
+    display: flex;
+    flex-wrap: nowrap;
+    color: white;
+    
+}
+.trending{
+  
+   overflow-y:hidden ;
+   overflow-x:scroll ;
+}
+.trending::-webkit-scrollbar{
+    display: none;
+}
+.action{
+   
+   overflow-y:
+   overflow-x:scroll ;
+}
+.action::-webkit-scrollbar{
+    display: none;
+}
+
+
+.popular_img{
+    display: inline-flex;
+    flex-wrap:nowrap ;
+    height:270px ;
+    width:188px ;
+
+}
+.popular_img:hover{
+    transform: scale(1.09);
+    &.grow {
+        transition: all .1s ease-in-out;
+    }
+}
+th{
+    font-size: 3rem;
+}
+.famous_img{
+    height:168px ;
+    width: 300px;
+}
+.banner{
+    z-index: -10;
+    top: 0%;
+    margin-top: -2vw;
+}
+.banner_img{
+    height: 1920px;
+    width: 870px;
+    top: 0%;
+}
+
+
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: solid;
+  border-color: green;
+  border-radius: 10px;
+}
+
+.content a {
+  color: black;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+  font-family: arial;
+}
+
+.content a:hover {background-color: green;}
+
+.dropdown:hover .content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: green;}
+        
+
+
+
+</style>
+</head>
+<body bgcolor="rgb(141, 109, 109)">
+
+<!-- NAVIGATION BAR -->
+<div class="container">   
+<img src="logo1.png" align="right" class="image" ></img>
+<center>
+<span class="dropdown">    
+<button class="dropbtn" > <b>HOME</b></button>
+</span>
+<span class="dropdown">
+<button class="dropbtn"> <b>MOVIES</b> </button>
+</span>    
+<span class="dropdown"><button class="dropbtn"><a href="music.html"><b>MUSIC</b></a></button></span>
+<span class="dropdown"><button class="dropbtn"><a href="games.html"><b>GAMES</b></a></button> </span>
+<span class="dropdown"><button class="dropbtn"><a href="shopping.html"><b>SHOPPING</b></a></button></span>
+<span class="dropdown">
+<button class="dropbtn"><b>MORE</b></button>
+    <span class="content">
+        <a href="ticket.html"><b>ONLINE BOOKING</b></a>
+        <a href="#"><b>RESTAURANTS</b></b></a>
+        <a href="#"><b>ONLINE COURSES</b></a>
+        <a href="#"><b>GOV. LINKS</b></a>
+        <a href="#"><b>NEWS</b></a>
+    </span>
+</span>
+</center>
+</div>
+<!-- <center>
+    <div class="head"><b>KOSM!C S@ILOR MOVIES </b></div>
+</center> -->
+
+<div class="banner">
+    <div class="banner_img"><img src="movie/banner.jpg" height="720px"
+    width="1515vw"></div>
+</div>
+
+   
+<table width="100%" class="trending" cellspacing="10px" >
+    <tr><th>Trending</th></tr>
+    <tr>
+        <div class="video">
+        <td><center>
+            <img src="movie/1.jpeg" alt="" class="popular_img">
+            </center></td>
+        <td><center><img src="movie/2.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/3.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/4.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/5.jpg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/6.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/7.jpg" alt="" class="popular_img"> 
+        </center></td>
+        <td><center>
+            <img src="movie/1.jpeg" alt="" class="popular_img">
+            </center></td>
+        <td><center><img src="movie/2.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/3.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/4.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/5.jpg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/6.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/7.jpg" alt="" class="popular_img"> 
+        </center></td>
+    </div>
+    </tr>
+</table>
+
+<table width="100%" class="action" cellspacing="10px" >
+    <tr rowspan="2"><th>Trending</th></tr>
+    <tr>
+        <div class="video">
+        <td><center>
+            <img src="movie/8.jpg" alt="" class="famous_img">
+            </center></td>
+        <td><center><img src="movie/9.jpg" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/10.jpg" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/11.png" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/12.jpeg" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/13.png" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/7.jpg" alt="" class="famous_img"> 
+        </center></td>
+        <td><center>
+            <img src="movie/1.jpeg" alt="" class="famous_img">
+            </center></td>
+        <td><center><img src="movie/2.jpeg" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/3.jpeg" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/4.jpeg" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/5.jpg" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/6.jpeg" alt="" class="famous_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/7.jpg" alt="" class="famous_img"> 
+        </center></td>
+    </div>
+    </tr>
+</table>
+
+<table width="100%" class="action" cellspacing="10px" >
+    <tr rowspan="2"><th style="position: sticky;">Trending</th></tr>
+    <tr>
+        <div class="video">
+        <td><center>
+            <img src="movie/1.jpeg" alt="" class="popular_img">
+            </center></td>
+        <td><center><img src="movie/2.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/3.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/4.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/5.jpg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/6.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/7.jpg" alt="" class="popular_img"> 
+        </center></td>
+        <td><center>
+            <img src="movie/1.jpeg" alt="" class="popular_img">
+            </center></td>
+        <td><center><img src="movie/2.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/3.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/4.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/5.jpg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/6.jpeg" alt="" class="popular_img"> 
+            
+        </center></td>
+        <td><center><img src="movie/7.jpg" alt="" class="popular_img"> 
+        </center></td>
+    </div>
+    </tr>
+</table>
+</body>
+</html>

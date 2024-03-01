@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="x-icon" href="logo1.png">
+    <title>Kosm!c S@ilor</title>    
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;   user-scalable=0;" name="viewport">
+    <style type="text/css">
+        body{
+/*            background-color: rgb(20, 20, 20);*/
+              background-image: url("b.jpg");
+              background-size: cover;
+          }
+            body::-webkit-scrollbar{
+            display: none;
+            }
+          .main{
+                display:flex;
+                width: 100%;
+                left: 0%;
+                top: 0%;
+                position:fixed ;
+               /* background-color: rgb(20, 20, 20) ;
+                height: 12vh;*/
+                background-image:url("b.jpg") ;
+                height: 12vh;
+
+                
+                flex-wrap:wrap;
+                justify-content: center;
+                justify-content: space-around;
+
+                
+                z-index: 1;
+                transition-timing-function: ease-in;
+                transition: all 0.5s;
+            }
+            
+
+
+            
+        /*header{
+            display: flex;
+            flex: 0 0 auto;
+            top:0%;
+            width:100%;
+            position: fixed;
+            margin-left: -.5vw;
+            background-color: black;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }*/
+        .dropbtn{
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding:5px;
+            font-family:arial;
+            font-size: 20px;
+            border: solid;
+            border-color: white;
+            border-radius:10px ;
+            margin-top: 1.3vw;
+            display:inline ;
+            position: static;
+            margin-left: 1.5vw;
+
+            
+            
+        }
+        .image{
+            height: 7vw;
+            width: 7vw;  
+                     
+            flex-wrap:nowrap;
+            margin-top: -4vw;
+            margin-left: 90vw;
+
+        }
+        .head{
+            color: yellowgreen;
+            font-size: 35px;
+            border: solid;
+            border-color: white;
+            padding: 1vw;
+            box-shadow:0 5px 40px 5px ghostwhite;
+            margin-top: 9vw;
+        }
+    
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: solid;
+  border-color: green;
+  border-radius: 10px;
+}
+
+.content a {
+  color: black;
+  padding: 12px 5px;
+  text-decoration: none;
+  display: block;
+  font-family: arial;
+}
+
+.content a:hover {background-color: green;}
+
+.dropdown:hover .content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: green;}
+
+ .bg{
+            height:17vw ;
+            width: 17vw;
+            box-shadow:0 0px 20px 4px lightblue;
+        }
+        .size{
+
+            color:lawngreen;
+            font-size: 20px;          
+            font-family:sans-serif;
+        }
+        .k{
+            margin-top: 3vw;
+            position: sticky;
+        }
+        th{
+            color: lightblue;
+            font-size: 30px;
+            font-family: monospace;
+        }
+        
+        td{
+            color: white;
+            border: solid;
+            border-color: white;
+            border-radius: 10px;
+            transition: transform 300ms;
+/*            background-image: url("gbg.jpg");*/
+            &.grow {
+        transition: all .1s ease-in-out;
+                }
+        &:hover {
+          transform: scale(1.05);
+          box-shadow:0 0px 40px 0px yellow;
+      }
+  }
+
+
+
+.title{
+    border: solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+}      
+
+h1{
+    margin-top: 3vw;
+    color:lightblue;
+    font-family: arial;
+
+}
+li{
+    cursor: pointer ;
+    margin-top: 1vw;
+    list-style-type:none;
+    border: solid lightblue;
+    background-color: green;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 19px;
+    width: 10vw;
+    height: 2vw;
+}
+span{
+
+       text-shadow: 0 0 30px black, 0 0 5px black;
+}
+hr{
+    margin-top: 5vw;
+    color: white;
+    border: solid;
+}
+.free{
+    margin-top: 19vw;
+}
+
+.a{
+    margin-top: 9vw;
+    margin-left: 4vw;
+    border: 4px solid green;
+    border-radius: 20px;
+    transition: transform 300ms;
+    box-shadow:0 0px 40px 0px ghostwhite; 
+}
+.a:hover{
+    transform: scale(1.03);
+    border-color: white;
+    box-shadow:0 0px 90px 0px red; 
+}
+.detail{
+    text-shadow: 0 0 30px black, 0 0 5px black;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: arial,helvetica,sans-serif;
+    margin-top:-25vw ;
+    margin-left: 42vw;
+    -webkit-text-stroke: 1px blue;
+  text-shadow: 0 0 3px white, 0 0 5px white; 
+}
+
+.b{
+    margin-top: 17vw;
+    display: flex;
+    margin-left: 46vw;
+    height: 70vh;
+    width: 50vw;
+    transition: transform 300ms;
+}
+.b:hover{
+    transform: scale(1.03);
+}
+.detail1{
+    text-shadow: 0 0 30px black, 0 0 5px black;
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: arial,helvetica,sans-serif;
+    margin-top: -23vw;
+    margin-left: 1vw;
+}
+.detail2{
+    text-shadow: 0 0 30px black, 0 0 5px black;
+    color: white;
+    font-size: 25px;
+    
+    font-family: arial,helvetica,sans-serif;
+    margin-top: vw;
+    margin-left: 1vw ;
+}
+</style>
+</head>
+<body bgcolor="black">
+
+<!-- NAVIGATION BAR -->
+<header>    
+<div class="main" id="main">
+<center>
+<div class="dropdown">    
+<button class="dropbtn" > <b>HOME</b></button>
+</div>
+<div class="dropdown">
+<button class="dropbtn"> <b>MOVIES</b> </button>
+</div>    
+<div class="dropdown"><button class="dropbtn"><a href="music.html"><b>MUSIC</b></a></button></div>
+<div class="dropdown"><button class="dropbtn"><a href="games.html"><b>GAMES</b></a></button> </div>
+<div class="dropdown"><button class="dropbtn"><a href="shopping.html"><b>SHOPPING</b></a></button></div>
+<div class="dropdown">
+<button class="dropbtn"><b>MORE</b></button>
+    <div class="content">
+        <a href="ticket.html"><b>ONLINE BOOKING</b></a>
+        <a href="#"><b>RESTAURANTS</b></b></a>
+        <a href="#"><b>ONLINE COURSES</b></a>
+        <a href="#"><b>GOV. LINKS</b></a>
+        <a href="#"><b>NEWS</b></a>
+    </div>
+</div>
+<div>
+<img src="logo1.png" class="image" >
+</div> 
+</center>
+</div>
+</header>
+<!-- <center>
+     <div class="head"><b>KOSM!C SAILOR GAMES  </b></div> 
+</center> -->
+
+
+<div class="container">
+    <div><img src="glogo1.png" class="a"> </div>
+    <div class="detail">Level up your passion for gaming.<br> <br>Here's the starting point to endless fun.</div>
+    <div><img src="1a1.png" class="b" ></div>
+    <div class="detail1">Be the hero you always wanted <br> to be.</div>
+    <div class="detail2">Compete against other gamers, beat their highest scores,<br> and maintain your strong foothold at the top of<br> the leaderboard.</div>
+</div>
+
+
+
+
+
+<center><h1 class="free"><u>FREE GAMES</u></h1></center>
+<table width="100%" class="k" cellpadding="20px" cellspacing="10px" >
+    <tr>
+        <th class="title">ACTION GAMES</th>
+    </tr>
+    <tr>
+        <td>
+        <center><img src="1.jpg" class="bg"><br>
+        <span class="size"><b>Stickman battle fight warrior</b></span>
+        <li><b><a href="https://www.crazygames.com/game/stickman-supreme-duelist-2"> Play</a></b></li>
+       
+        </center></td>
+        <td><center><img src="2.png" class="bg"><br>
+        <span class="size"><b>Sandbox City</b></span>
+         <li><b><a href="https://www.crazygames.com/game/sandbox-city---cars-zombies-ragdolls"> Play</a></b></li>
+        
+        </center></td>
+        <td><center><img src="3.png" class="bg"><br>
+        <span class="size"><b>Getaway Shootout </b></span>
+         <li><b><a href="https://www.crazygames.com/game/getaway-shootout"> Play</a></b></li> 
+        
+        </center></td>
+        <td><center><img src="4.jpeg" class="bg"><br>
+        <span class="size"><b>Ninja Hands</b></span>
+         <li><b><a href="https://www.crazygames.com/game/ninja-hands"> Play</a></b></li>  
+        
+        </center></td>
+    </tr>
+</table>
+<table width="100%" class="k" cellpadding="20px" cellspacing="10px" >
+    <tr>
+        <th class="title">DRIVING GAMES</th>
+    </tr>
+    <tr>
+        <td>
+        <center><img src="5.jpg" class="bg"><br>
+        <span class="size"><b>Moto X3M</b></span>
+         <li><b><a href="https://www.crazygames.com/game/moto-x3m"> Play</a></b></li>
+       
+        </center></td>
+        <td><center><img src="6.png" class="bg"><br>
+        <span class="size"><b>Highway Racer</b></span>
+         <li><b><a href="https://www.crazygames.com/game/highway-racer-2"> Play</a></b></li>
+        
+        </center></td>
+        <td><center><img src="7.jpg" class="bg"><br>
+        <span class="size"><b>Super Bike</b></span>
+         <li><b><a href="https://www.crazygames.com/game/super-bike-the-champion"> Play</a></b></li> 
+        
+        </center></td>
+        <td><center><img src="8.jpeg" class="bg"><br>
+        <span class="size"><b>Super Car</b></span>
+         <li><b><a href="https://www.crazygames.com/game/super-star-car"> Play</a></b></li>  
+        
+        </center></td>
+    </tr>
+</table>
+
+<table width="100%" class="k" cellpadding="20px" cellspacing="10px" >
+    <tr>
+        <th class="title">.IO GAMES</th>
+    </tr>
+    <tr>
+        <td>
+        <center><img src="9.jpg" class="bg"><br>
+        <span class="size"><b>Bloxd .io</b></span>
+         <li><b><a href="https://www.crazygames.com/game/bloxdhop-io"> Play</a></b></li>
+       
+        </center></td>
+        <td><center><img src="10.jpeg" class="bg"><br>
+        <span class="size"><b>Smash Karts</b></span>
+         <li><b><a href="https://www.crazygames.com/game/smash-karts"> Play</a></b></li>
+        
+        </center></td>
+        <td><center><img src="11.jpeg" class="bg"><br>
+        <span class="size"><b>Evowars .io</b></span>
+         <li><b><a href="https://www.crazygames.com/game/evowarsio"> Play</a></b></li> 
+        
+        </center></td>
+        <td><center><img src="12.jpg" class="bg"><br>
+        <span class="size"><b>Rocket Bot Royale</b></span>
+         <li><b><a href="https://www.crazygames.com/game/rocket-bot-royale"> Play</a></b></li>  
+        
+        </center></td>
+    </tr>
+</table>
+
+<table width="100%" class="k" cellpadding="20px" cellspacing="10px" >
+    <tr>
+        <th class="title">SHOOTING GAMES</th>
+    </tr>
+    <tr>
+        <td>
+        <center><img src="13.png" class="bg"><br>
+        <span class="size"><b>Bullet Force</b></span>
+         <li><b><a href="https://www.crazygames.com/game/bullet-force-multiplayer"> Play</a></b></li>
+       
+        </center></td>
+        <td><center><img src="14.jpeg" class="bg"><br>
+        <span class="size"><b>Forward Assualt</b></span>
+         <li><b><a href="https://www.crazygames.com/game/forward-assault"> Play</a></b></li>
+        
+        </center></td>
+        <td><center><img src="15.jpeg" class="bg"><br>
+        <span class="size"><b>Time Shooter</b></span>
+         <li><b><a href="https://www.crazygames.com/game/time-shooter-2"> Play</a></b></li> 
+        
+        </center></td>
+        <td><center><img src="16.jpeg" class="bg"><br>
+        <span class="size"><b>Air Wars 3</b></span>
+         <li><b><a href="https://www.crazygames.com/game/air-wars-3"> Play</a></b></li>  
+        
+        </center></td>
+    </tr>
+</table>
+<hr>
+<center><h1><u>PREMIUM GAMES</u></h1></center>
+<table width="100%" class="k" cellpadding="20px" cellspacing="10px" >
+    
+    <tr>
+        <td>
+        <center><img src="17.jpg" class="bg"><br>
+        <span class="size"><b>Valorant</b></span>
+        <li><b><a href="https://www.crazygames.com/game/stickman-supreme-duelist-2"> Play</a></b></li>
+       
+        </center></td>
+        <td><center><img src="18.jpg" class="bg"><br>
+        <span class="size"><b>Counter Strike</b></span>
+         <li><b><a href="https://www.crazygames.com/game/sandbox-city---cars-zombies-ragdolls"> Play</a></b></li>
+        
+        </center></td>
+        <td><center><img src="19.jpeg" class="bg"><br>
+        <span class="size"><b>GTA 5</b></span>
+         <li><b><a href="https://www.crazygames.com/game/getaway-shootout"> Play</a></b></li> 
+        
+        </center></td>
+    </tr>
+</table>
+
+<table width="100%" class="k" cellpadding="20px" cellspacing="10px" >
+    
+    <tr>
+        <td>
+        <center><img src="20.jpeg" class="bg"><br>
+        <span class="size"><b>BGMI</b></span>
+        <li><b><a href="https://www.crazygames.com/game/stickman-supreme-duelist-2"> Play</a></b></li>
+       
+        </center></td>
+        <td><center><img src="21.jpeg" class="bg"><br>
+        <span class="size"><b>League of Legends</b></span>
+         <li><b><a href="https://www.crazygames.com/game/sandbox-city---cars-zombies-ragdolls"> Play</a></b></li>
+        
+        </center></td>
+        <td><center><img src="22.jpg" class="bg"><br>
+        <span class="size"><b>Apex Legends</b></span>
+         <li><b><a href="https://www.crazygames.com/game/getaway-shootout"> Play</a></b></li> 
+        
+        </center></td>
+    </tr>
+</table>
+</body>
+</html>
